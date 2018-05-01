@@ -50,12 +50,16 @@
           <div class="content-tab">
             {{{body}}}
             {{#if tag_info}}
-
-            <div id="tags"> 
-              {{#each tag_info}}
-              <a class="one-tag" href="/tags/{{this}}">"{{this}}"</a> 
-              {{/ each}}
-              </div>
+              
+              <br/>
+              <a class="tagTitle">Etiquetas</a>
+            
+              <div id="tags" class="tags"> 
+                {{#each tag_info}}
+                <a class="one-tag" href="/tags/{{this}}">"{{this}}"</a> 
+                {{/ each}}
+                </div>
+                <br/>
             {{/ if}}
           </div>
         </div>

@@ -3,7 +3,35 @@
   background-color:  #F1F1F1
 }
 
+.tags {
+  padding: 12px;
+  padding-top:15px;
+  margin-left: 5px;
 
+  box-shadow: 0px 0px 1px #6F6F6F;
+}
+.tagTitle {
+  position:relative;
+  z-index: 100;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+  color: #000000;
+  bottom: -5px;
+  border: 1px solid gray;
+  background-color:#F2F2F2;
+  }
+.one-tag {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 15px;
+  background-color: #F2F2F2;
+  border-radius: 105px;
+  white-space: nowrap;
+
+}
 
 .top-header {
   background:#F9F9F9;
@@ -54,6 +82,9 @@ footer {
   .sidenav {
     height: auto;
     padding: 15px;
+  }
+  .one-tag {
+    display: inline-block;
   }
   .row.content {height:auto;} 
 }
