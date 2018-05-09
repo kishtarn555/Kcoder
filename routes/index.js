@@ -34,6 +34,17 @@ router.get('/articles', function(req, res, next) {
 });
 
 
+router.get('/TESTER', function(req, res, next) {
+  let urlCode=req.params.code;
+  if (!(/^[a-zA-Z\-0-9]+$/.test(urlCode))) {
+    res.render('invalidurl',{});
+  }
+  var q = fireAdmin.database().ref("TEST/"+urlCode+"/TEST");
+  q.set({lol:"32x23"});
+  res.render('articles/'+urlCode, {show_tags:true, tag_info:["TESTING"]});
+  
+  
+});
 router.get('/:code', function(req, res, next) {
     let urlCode=req.params.code;
     if (!(/^[a-zA-Z\-0-9]+$/.test(urlCode))) {
